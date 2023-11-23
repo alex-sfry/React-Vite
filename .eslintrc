@@ -1,5 +1,46 @@
 {
     "extends": [
-        "react-app"
-    ]
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:import/errors"
+    ],
+    "plugins": [
+        "react",
+        "import"
+    ],
+    "rules": {
+        "react/prop-types": 0,
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
+        "no-unused-vars": "warn"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2021,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            },
+            "caseSensitive": false
+        }
+    }
 }
