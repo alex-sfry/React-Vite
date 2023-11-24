@@ -1,6 +1,6 @@
 {
-  "short_name": "Kanban",
-  "name": "Kanban board",
+  "short_name": "react-project",
+  "name": "react-project",
   "icons": [
     {
       "src": "favicon.ico",
